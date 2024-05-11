@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "t07-01-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "",
+      "output": "Pniel|4|female|0\r\nKapernaum|3|male|0\r\n12S21001|Dhino Turnip|2021|male|unassigned\r\n12S21006|Weny Sitinjak|2021|female|unassigned\r\n12S21010|Bobby Siagian|2021|male|unassigned\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 40
+    },
+    {
+      "name": "t07-02-01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "",
+      "output": "Pniel|4|female|0\r\nKapernaum|3|male|0\r\n12S21001|Dhino Turnip|2021|male|unassigned\r\n12S21006|Weny Sitinjak|2021|female|unassigned\r\n12S21010|Bobby Siagian|2021|male|unassigned\r\n12S21001|Dhino Turnip|2021|male|Kapernaum\r\n12S21002|Marudut Tampubolon|2021|male|Kapernaum\r\n12S21003|Jusas Tampubolon|2021|male|Kapernaum\r\n12S21004|Estomihi pangaribuan|2021|male|unassigned\r\n12S21006|Weny Sitinjak|2021|female|Pniel\r\n12S21007|Dame Sitinjak|2021|female|Pniel\r\n12S21008|Tuani Manurung|2021|male|unassigned\r\n12S21009|Mikhael Pakpahan|2021|male|unassigned\r\n12S21010|Bobby Siagian|2021|male|unassigned\r\n12S21011|Aldi Simamora|2021|male|unassigned\r\nPniel|4|female|2\r\nKapernaum|3|male|3\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 60
+    }
+  ]
+}
