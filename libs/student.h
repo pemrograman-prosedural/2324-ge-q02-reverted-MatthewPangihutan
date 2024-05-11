@@ -19,7 +19,18 @@ struct student_t
     struct dorm_t *dorm;
 };
 
-struct student_t create_student(char *_id, char *_name, char *_year,
-                                enum gender_t _gender);
+struct student_t create_student(char *_id, char *_name, char *_year, enum gender_t _gender);
+
+void print_student(struct student_t mhs);
+
+void print_student_detail(struct student_t mhs);
+
+void assign_student(struct dorm_t *drm, struct student_t *mhs, char *nim, char *asrama, int zstd, int zdrm, int find_id(char *nim, int zstd, struct student_t *mhs), int find_dorm(char *asrama, int zdrm, struct dorm_t *drm));
+
+int find_id(char *nim, int zstd, struct student_t *mhs);
+
+void move_student(struct dorm_t *drm, struct student_t *mhs, char *nim, char *asrama, int zstd, int zdrm, int find_id(char *nim, int zstd, struct student_t *mhs), int find_dorm(char *asrama, int zdrm, struct dorm_t *drm));
+
+void dorm_empty(char *asrama, int zstd, int zdrm, struct student_t *mhs, struct dorm_t *drm, int find_dorm(char *asrama, int zdrm, struct dorm_t *drm));
 
 #endif

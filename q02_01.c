@@ -70,14 +70,14 @@ int main(int _argc, char **_argv)
                 
                 token = strtok(NULL, delim);
                 if ( totalStudent > 0 ) {
-                    create_student = (struct student_t*) realloc(create_student, (totalStudent+1) * sizeof(struct student_t));
+                    create_dorms = (struct dorm_t*) realloc(create_dorms, (totalDorm+1) * sizeof(struct dorm_t));
                 }
                 if ( strcmp(token, "male") == 0 ) {
                     dorms[totalDorm] = *create_dorm(_id, _name, _year, GENDER_MALE);
                     totalStudent++;
                 }
                 else if ( strcmp(token, "female") == 0 ) {
-                    create_student[totalStudent] = *create_student(_id, _name, _year, GENDER_FEMALE);
+                    dorms[totalDorm] = *create_dorm(_id, _name, _year, GENDER_FEMALE);
                     totalStudent++;
                 }
             }
